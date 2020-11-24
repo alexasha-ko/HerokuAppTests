@@ -12,6 +12,10 @@ public class TyposVerifications {
 
         driver.getPageSource().contains("Sometimes you'll see a typo, other times you won't.");
 
+        driver.navigate().refresh();
+
+        driver.getPageSource().contains("Sometimes you'll see a typo, other times you won't.");
+
         driver.quit();
     }
 }
