@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Local Execution" verbose="5">
+    <test name="Smoke">
+        <classes>
+            <class name="AddRemoveElements"/>
+            <class name="CheckboxesVerification"/>
+            <class name="DataTablesChecks"/>
+            <class name="DropdownVerification"/>
+            <class name="HoversChecks"/>
+            <class name="InputsChecks"/>
+            <class name="TyposVerifications"/>
+        </classes>
+    </test>
+</suite>

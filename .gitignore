@@ -1,0 +1,5 @@
+/pom.xml
+/HerokuAppTests.iml
+/.idea/
+/src/test/resources/chromedriver.exe
+/src/test/resources/Default.xml
