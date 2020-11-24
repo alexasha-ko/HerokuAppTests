@@ -2,7 +2,7 @@
 <suite name="Local Execution" verbose="5">
     <test name="Smoke">
         <classes>
-            <class name="AddRemoveElements"/>
+
             <class name="CheckboxesVerification"/>
             <class name="DataTablesChecks"/>
             <class name="DropdownVerification"/>
