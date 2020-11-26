@@ -9,5 +9,8 @@
         <module name="HerokuAppTests" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="HerokuAppTests" target="14" />
+    </bytecodeTargetLevel>
   </component>
 </project>
