@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class DataTablesChecks {
     @Test
-    public void lastNameContentCheck(){
+    public void lastNameContentCheck() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://the-internet.herokuapp.com/tables");
@@ -15,11 +15,9 @@ public class DataTablesChecks {
         System.out.println("Last name value  of the selected cell is " + lastname.getText());
 
         driver.quit();
-
-
     }
     @Test
-    public void nameContentChecks(){
+    public void nameContentChecks() {
 
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -27,11 +25,9 @@ public class DataTablesChecks {
 
         WebElement name = driver.findElement(By.xpath("//*[@id=\"table1\"]/tbody/tr[2]/td[2]"));
         System.out.println("Name value of the selected cell is " + name.getText());
-
     }
-
     @Test
-    public void emailContentChecks(){
+    public void emailContentChecks() {
 
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -41,8 +37,5 @@ public class DataTablesChecks {
         System.out.println("Email value of the selected cell is " + email.getText());
 
         driver.quit();
-
     }
-
-
 }

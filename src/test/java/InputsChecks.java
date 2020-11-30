@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class InputsChecks {
 
     @Test
-    public void fieldVerification(){
+    public void fieldVerification() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://the-internet.herokuapp.com/inputs");
@@ -26,11 +26,9 @@ public class InputsChecks {
         selectingDown.sendKeys(Keys.ARROW_DOWN);
 
         driver.quit();
-
-        }
-
-        @Test
-        public void wordValuesChecks(){
+    }
+    @Test
+    public void wordValuesChecks() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://the-internet.herokuapp.com/inputs");
@@ -39,6 +37,5 @@ public class InputsChecks {
         driver.findElement(By.cssSelector("#content > div > div > div > input[type=number]")).sendKeys("$#^&*");
 
         driver.quit();
-
     }
 }

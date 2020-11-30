@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class DropdownVerification {
 
     @Test
-    public void elementsPresence(){
+    public void elementsPresence() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://the-internet.herokuapp.com/dropdown");
@@ -17,9 +17,8 @@ public class DropdownVerification {
 
         driver.quit();
     }
-
     @Test
-    public void selectingValues(){
+    public void selectingValues() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://the-internet.herokuapp.com/dropdown");
@@ -33,6 +32,5 @@ public class DropdownVerification {
         Assert.assertTrue(secondIsSelected);
 
         driver.quit();
-
     }
 }

@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class HoversChecks {
 
     @Test
-    public void userOneChecks(){
+    public void userOneChecks() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://the-internet.herokuapp.com/hovers");
@@ -25,13 +25,9 @@ public class HoversChecks {
         driver.getPageSource().contains("Not Found");
 
         driver.quit();
-
-
-
     }
-
     @Test
-    public void userTwoChecks(){
+    public void userTwoChecks() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://the-internet.herokuapp.com/hovers");
@@ -48,13 +44,9 @@ public class HoversChecks {
         driver.getPageSource().contains("Not Found");
 
         driver.quit();
-
-
-
     }
-
     @Test
-    public void userThreeChecks(){
+    public void userThreeChecks() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://the-internet.herokuapp.com/hovers");
@@ -71,10 +63,5 @@ public class HoversChecks {
         driver.getPageSource().contains("Not Found");
 
         driver.quit();
-
-
-
     }
-
-
 }

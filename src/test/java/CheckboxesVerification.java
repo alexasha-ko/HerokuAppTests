@@ -3,13 +3,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.util.concurrent.TimeUnit;
 
 public class CheckboxesVerification {
 
     @Test
-    public void firstCheckboxVerification(){
+    public void firstCheckboxVerification() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://the-internet.herokuapp.com/checkboxes");
@@ -19,11 +18,9 @@ public class CheckboxesVerification {
         Assert.assertFalse(first);
 
         driver.quit();
-
     }
-
     @Test
-    public void checkFirstCheckbox(){
+    public void checkFirstCheckbox() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://the-internet.herokuapp.com/checkboxes");
@@ -35,11 +32,9 @@ public class CheckboxesVerification {
         Assert.assertTrue(firstToCheck);
 
         driver.quit();
-
     }
-
     @Test
-    public void secondCheckbox(){
+    public void secondCheckbox() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://the-internet.herokuapp.com/checkboxes");
@@ -56,9 +51,5 @@ public class CheckboxesVerification {
         Assert.assertFalse(secondUnchecked);
 
         driver.quit();
-
     }
-
-
-
 }
